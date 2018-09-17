@@ -1,11 +1,11 @@
 package com.company;
 
-public class Frames {
+public class Frame {
 
     private final int firstPine;
     private final int secondPine;
 
-    public Frames(int firstPine, int secondPine) {
+    public Frame(int firstPine, int secondPine) {
         this.firstPine = firstPine;
         this.secondPine = secondPine;
     }
