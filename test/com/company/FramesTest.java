@@ -33,4 +33,18 @@ class FramesTest {
 
         assertEquals(15, frames.getResult());
     }
+
+    @Test
+    void getResult_expect7When_firstPine_5_andSecondPine_2() {
+        Frames frames = new Frames(5, 2);
+
+        assertEquals(7, frames.getResult());
+    }
+
+    @Test
+    void getResult_expect7When_firstPine_5_andSecondPine_3() {
+        Frames frames = new Frames(5, 3);
+
+        assertEquals(8, frames.getResult());
+    }
 }

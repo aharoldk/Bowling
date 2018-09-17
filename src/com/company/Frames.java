@@ -20,6 +20,6 @@ public class Frames {
             return firstPine + 10;
         }
 
-        return (firstPine + secondPine) * 3;
+        return firstPine + secondPine;
     }
 }
