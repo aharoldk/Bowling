@@ -47,4 +47,18 @@ class FramesTest {
 
         assertEquals(8, frames.getResult());
     }
+
+    @Test
+    void toString_expectGet_10_0_WhenStrike() {
+        Frames frames = new Frames(10, 0);
+
+        assertEquals("10 0", frames.toString());
+    }
+
+    @Test
+    void toString_expectGet_7_3_WhenSpare() {
+        Frames frames = new Frames(7, 3);
+
+        assertEquals("7 3", frames.toString());
+    }
 }

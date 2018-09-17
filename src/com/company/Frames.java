@@ -25,4 +25,9 @@ public class Frames {
 
         return result;
     }
+
+    @Override
+    public String toString() {
+        return firstPine + " " + secondPine;
+    }
 }
