@@ -11,15 +11,18 @@ public class Frames {
     }
 
     public int getResult() {
+        int result;
 
         if (firstPine == 10) {
-            return 30;
+            result = 30;
+
+        } else if ((firstPine + secondPine) == 10) {
+            result = firstPine + 10;
+
+        } else {
+            result = firstPine + secondPine;
         }
 
-        if ((firstPine + secondPine) == 10) {
-            return firstPine + 10;
-        }
-
-        return firstPine + secondPine;
+        return result;
     }
 }
