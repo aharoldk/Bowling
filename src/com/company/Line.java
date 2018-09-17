@@ -45,4 +45,15 @@ public class Line {
     public int hashCode() {
         return Objects.hash(frames);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder result = null;
+
+        for (Frame frame : frames) {
+            result.append(frame.toString()).append("\n");
+        }
+
+        return result.toString();
+    }
 }

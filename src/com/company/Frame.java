@@ -28,6 +28,6 @@ public class Frame {
 
     @Override
     public String toString() {
-        return firstPine + " " + secondPine;
+        return firstPine + " " + secondPine + ": "+getResult();
     }
 }
